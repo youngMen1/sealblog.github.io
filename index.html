@@ -154,13 +154,13 @@
 <p>至此Hexo安装完成，使用查看版本命令<code>hexo -v</code>检查是否正常安装。</p>
 <p><img src="https://blog.yk95.top/static/img/2017-5-22_21-30-53.png" alt="img"></p>
 <h2 id="4、注册Github以及创建仓库"><a href="#4、注册Github以及创建仓库" class="headerlink" title="4、注册Github以及创建仓库"></a>4、注册Github以及创建仓库</h2><p>接下来我们注册Github账号，使用常用邮箱注册即可，过程比较简单这里就不细讲了。 注册成功登录后，来到我的仓库页面，点击New repository。</p>
-<p><img src="blob:file:///2d87b482-6105-488a-a106-a5cdb67cf961" alt="img"></p>
+<p><img src="https://blog.yk95.top/static/img/6274a5c0-2e2e-47fd-881b-d204fce2674a.png" alt="img"></p>
 <p>注意Repository name一定得是yourname.github.io，这样才能使用这个地址访问到你的Github page，填好Repository name，点击Create repository。（我这里因为之前创建过，所以报同名错误，大家第一次创建的话可以忽略）。</p>
-<p><img src="blob:file:///2e063732-4ca5-46a6-b900-a35cf5546fe0" alt="img"></p>
+<p><img src="https://blog.yk95.top/static/img/19009ab6-91bf-41ae-8912-1093abb8af75.png" alt="img"></p>
 <p>在<a href="#">零基础免费搭建个人博客-hexo+github</a>里有个‘启用GitHub Page’的步骤，但我发现页面都已经变得不一样了，最新的页面如下所示，只需要Choose Theme就会自动启用Github Page。</p>
 <p><img src="https://blog.yk95.top/static/img/2017-5-27_23-46-36.png" alt="img"></p>
 <p>创建仓库后我们后面的步骤需要用到仓库地址，进到yourname.github.io仓库页面，看下图。</p>
-<p><img src="blob:file:///e73ae56f-d68b-40d6-a54e-779427650432" alt="img"></p>
+<p><img src="https://blog.yk95.top/static/img/54c5a5df-9de8-4c03-ae1c-ea477fa9d66e.png" alt="img"></p>
 <h1 id="二、本地启动与部署到Github"><a href="#二、本地启动与部署到Github" class="headerlink" title="二、本地启动与部署到Github"></a>二、本地启动与部署到Github</h1><h2 id="1、本地启动"><a href="#1、本地启动" class="headerlink" title="1、本地启动"></a>1、本地启动</h2><p>创建一个新文件夹（我的是在E盘创建的Blog），进入该文件夹，右键Git Bash Here，输入<code>hexo init</code>命令。PS：由于博主搭建成功后并没有推倒再来一遍，所以到这里就没有截图了，大家键入命令后，在程序运行过程记得一定要耐心等待。</p>
 <p>初始化成功后，大概是下面的目录结构（我这个是部署到git后，有多了几个文件）。</p>
 <p><img src="https://blog.yk95.top/static/img/2017-5-27_23-8-46.png" alt="img"></p>
@@ -175,13 +175,13 @@
 <p>博主选择的主题是yilia，这里遇到了一个坑：使用yilia主题有了两个_config.yml文件，一个是我们一直用到的，另一个是yilia主题目录下的，启用yilia的某些功能需要在我们一直用到的_config.yml文件配置，而yilia主题的定制是在yilia目录下的_config.yml配置，其他主题可能也会有这样的情况，这一点稍微注意下。</p>
 <p>另附上yilia主题的评论配置：<a href="#">多说、畅言、网易云跟帖、Disqus评论配置</a></p>
 <h2 id="2、配置域名"><a href="#2、配置域名" class="headerlink" title="2、配置域名"></a>2、配置域名</h2><p>这一步骤提供给需要使用自己的域名访问Github page的读者，不需要的可以直接跳过。 在cmd窗口使用<code>ping yourname.github.io</code>得到IP地址，见下图。</p>
-<p><img src="blob:file:///538bef4e-1862-44af-b88f-d8e82be8105a" alt="img"></p>
+<p><img src="https://8to8.top/static/img/6b13ec69-9141-43c8-a6e4-48b29e6b5570.png" alt="img"></p>
 <p>在你的Github博客仓库根目录下创建CNAME文件，注意不能有文件名不能有后缀且要大写，内容为你想指定的域名。</p>
-<p><img src="blob:file:///61517c4c-a919-4e88-bdfb-9428f08aa409" alt="img"></p>
+<p><img src="https://8to8.top/static/img/8aaabd89-9a17-4d93-9e07-7631ab1ec36f.png" alt="img"></p>
 <p>然后将你的域名映射到该IP地址，这里以博主的阿里云购买的域名举例，在阿里云域名控制台添加一条解析，如下图。</p>
-<p><img src="blob:file:///650f4b8c-68e8-40fc-b91a-bfa662155b77" alt="img"></p>
+<p><img src="https://8to8.top/static/img/cf609c5e-dd50-4735-9088-41ecfdeab932.png" alt="img"></p>
 <p>或者将你的记录值配置成185.199.108.153(比较麻烦需要备案)</p>
-<p>等解析生效就可以使用域名访问Github page了，例如博主的：<a href="#">http://8</a>to8.top</p>
+<p>等解析生效就可以使用域名访问Github page了，例如博主的：[<a href="http://8to8.top]" target="_blank" rel="noopener">http://8to8.top]</a></p>
 <p>使用域名访问Github page还需要注意一点，我们使用<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>命令将博客发布到Git时，Hexo会将整个仓库全部清空，然后才提交，这样我们创建的CNAME文件就被删除了，这里提供一个简单的解决方案，在本地博客public文件夹下创建CNAME文件，发布到Git时不clean使用<code>hexo g &amp;&amp; hexo d</code>命令，发布时会将CNAME文件一起提交。</p>
 
       
